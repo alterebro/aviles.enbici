@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "parcel src/index.html",
     "clean": "rimraf dist",
     "build": "npm run clean && parcel build --no-source-maps src/index.html"
   },

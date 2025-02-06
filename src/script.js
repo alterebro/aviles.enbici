@@ -141,6 +141,9 @@ const locations = [
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
+    L.tileLayer.provider('Stadia.OSMBright').addTo(map);
+
+
     /*
     // add markers w/popups
     locations.forEach(location => {

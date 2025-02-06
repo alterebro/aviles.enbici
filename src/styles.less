@@ -1,7 +1,44 @@
+html {
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, arial, sans-serif;
+	font-size: 62.5%;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	color: #222;
+	background-color: #fff;
+}
+body {
+	font-size: 1.6em;
+	line-height: 1.4;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 #map { 
     height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
+    font-size: 1.2rem;
+}
+
+#about {
+    height: 100vh;
+    width: 100vw;
+    max-width: 64rem;
+    position: absolute;
+    overflow: scroll;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, .75);
+    padding: 1rem 3rem;
+    display: none;
 }
