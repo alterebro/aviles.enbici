@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && parcel build --no-source-maps src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "rimraf": "^6.0.1"
+  }
+}
