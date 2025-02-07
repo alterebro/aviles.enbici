@@ -1,8 +1,8 @@
-# Avilés en bici
+# [Avilés en bici](https://alterebro.github.io/aviles.enbici/)
 
-> Mapa de disponibilidad del servicio de movilidad sostenible EnBici de Avilés &rarr; [github.com/alterebro/aviles.enbici](https://github.com/alterebro/aviles.enbici)
+> Mapa de disponibilidad del servicio de movilidad sostenible EnBici de Avilés: [alterebro.github.io/aviles.enbici](https://alterebro.github.io/aviles.enbici/)
 
-![Avilés en Bici](src/aviles-en-bici.jpg)
+[![Avilés en Bici](src/aviles-en-bici.jpg)](https://alterebro.github.io/aviles.enbici/)
 
 ---
 

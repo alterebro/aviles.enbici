@@ -95,7 +95,6 @@ const map = L.map('map', {
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);
-L.tileLayer.provider('Stadia.OSMBright').addTo(map);
 
 function updateMap(locations) {
 
