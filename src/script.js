@@ -1,193 +1,116 @@
+// Default Locations
 const locations = [
     {
-        name: "01 - CDA Quirinal",
-        lat: 43.5558,
-        lng: -5.93422,
-        locks: 7,
-        bikes: 0,
-        ebikes: 3
+        id: 0, name: "01 - CDA  Quirinal",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.5558, lng: -5.93422
     },
     {
-        name: "02 - Las Meanas",
-        lat: 43.55666,
-        lng: -5.9256,
-        locks: 18,
-        bikes: 0,
-        ebikes: 2
+        id: 1, name: "02 - Las Meanas",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.55666, lng: -5.9256
     },
     {
-        name: "03 - Los Canapés",
-        lat: 43.54636,
-        lng: -5.9157,
-        locks: 13,
-        bikes: 0,
-        ebikes: 2
+        id: 2, name: "03 - Los Canapés",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.54636, lng: -5.9157
     },
     {
-        name: "04 - La Toba",
-        lat: 43.54566,
-        lng: -5.89987,
-        locks: 5,
-        bikes: 0,
-        ebikes: 5
+        id: 3, name: "04 - La Toba",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.54566, lng: -5.89987
     },
     {
-        name: "05 - Villalegre",
-        lat: 43.53772,
-        lng: -5.90362,
-        locks: 8,
-        bikes: 0,
-        ebikes: 2
+        id: 4, name: "05 - Villalegre",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.53772, lng: -5.90362
     },
     {
-        name: "06 - Oficina de Turismo",
-        lat: 43.556089,
-        lng: -5.920556,
-        locks: 12,
-        bikes: 0,
-        ebikes: 3
+        id: 5, name: "06 - Oficina de Turismo",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.556089, lng: -5.920556
     },
     {
-        name: "07 - EOI IES nº5",
-        lat: 43.560407,
-        lng: -5.933887,
-        locks: 7,
-        bikes: 0,
-        ebikes: 3
+        id: 6, name: "07 - EOI IES nº5",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.560407, lng: -5.933887
     },
     {
-        name: "08 - Parking Avda. Gijón",
-        lat: 43.551769,
-        lng: -5.914237,
-        locks: 7,
-        bikes: 0,
-        ebikes: 3
+        id: 7, name: "08 - Parking Avda. Gijón",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.551769, lng: -5.914237
     },
     {
-        name: "09 - PEPA",
-        lat: 43.559548,
-        lng: -5.909888,
-        locks: 19,
-        bikes: 0,
-        ebikes: 1
+        id: 8, name: "09 - PEPA",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.559548, lng: -5.909888
     },
     {
-        name: "10 - LA LUZ",
-        lat: 43.538959,
-        lng: -5.90838,
-        locks: 8,
-        bikes: 0,
-        ebikes: 2
+        id: 9, name: "10 - LA LUZ",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.538959, lng: -5.90838
     },
     {
-        name: "11 - Estación Central",
-        lat: 43.561217,
-        lng: -5.923021,
-        locks: 7,
-        bikes: 0,
-        ebikes: 3
+        id: 10, name: "11 - Estación Central",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.561217, lng: -5.923021
     },
     {
-        name: "12 - La Carriona",
-        lat: 43.541638,
-        lng: -5.938934,
-        locks: 8,
-        bikes: 0,
-        ebikes: 2
+        id: 11, name: "12 - La Carriona",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.541638, lng: -5.938934
     },
     {
-        name: "13 - La Magdalena",
-        lat: 43.551086,
-        lng: -5.929057,
-        locks: 7,
-        bikes: 0,
-        ebikes: 3
+        id: 12, name: "13 - La Magdalena",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.551086, lng: -5.929057
     },
     {
-        name: "14 - Llaranes - FEVE",
-        lat: 43.553833,
-        lng: -5.897278,
-        locks: 10,
-        bikes: 0,
-        ebikes: 5
+        id: 13, name: "14 - Llaranes - FEVE",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.553833, lng: -5.897278
     },
     {
-        name: "15 - HUSA",
-        lat: 43.552111,
-        lng: -5.936722,
-        locks: 8,
-        bikes: 0,
-        ebikes: 2
+        id: 14, name: "15 - HUSA",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.552111, lng: -5.936722
     },
     {
-        name: "16 - La Rocica - RENFE",
-        lat: 43.547028,
-        lng: -5.905556,
-        locks: 15,
-        bikes: 0,
-        ebikes: 0
+        id: 15, name: "16 - La Rocica - RENFE",
+        locks: 0, bikes: 0, ebikes: 0,
+        lat: 43.547028, lng: -5.905556
     }
 ];
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+// Init mapa
+const map = L.map('map', {
+    minZoom: 12,
+    maxZoom: 18
+}).setView([43.556089, -5.920556], 14);
 
-
-    // Init mapa
-    // const map = L.map('map').setView([43.5558, -5.93422], 14);
-    const map = L.map('map').setView([43.5556629, -5.9411305], 13);
-
-    // Base Layer OpenStreetMap
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
-    L.tileLayer.provider('Stadia.OSMBright').addTo(map);
-
-
-    /*
-    // add markers w/popups
-    locations.forEach(location => {
-        const ocupados = location.regular + location.electric;
-        const libres = location.locks - ocupados;
-        
-        const popupContent = `
-            <b>${location.name}</b><br>
-            Anclajes libres: ${libres}<br>
-            Anclajes ocupados: ${ocupados}<br>
-            Bicis normales: ${location.regular}<br>
-            Bicis eléctricas: ${location.electric}
-        `;
-
-        L.marker([location.lat, location.lng])
-            .addTo(map)
-            .bindPopup(popupContent);
-    });
-
-    // Set view to show all markers
-    const bounds = L.latLngBounds(locations.map(loc => [loc.lat, loc.lng]));
-    map.fitBounds(bounds);
-    */
-
-
+// Base Layer OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+L.tileLayer.provider('Stadia.OSMBright').addTo(map);
 
 function updateMap(locations) {
 
-
-    if (window.markers) {
-        window.markers.forEach(marker => marker.remove());
-    }
+    if (window.markers) { window.markers.forEach(marker => marker.remove()); }
 
     window.markers = locations.map(location => {
         const busy = location.bikes + location.ebikes;
         const available = location.locks - busy;
-
-        const popupContent = `
-            <b>${location.name}</b><br>
-            Anclajes libres: ${available}<br>
-            Anclajes ocupados: ${busy}<br>
-            Bicis normales: ${location.bikes}<br>
-            Bicis eléctricas: ${location.ebikes}
-        `;
+        const modalList = [
+            { term: 'Anclajes libres', val: available },
+            { term: 'Anclajes ocupados', val: busy },
+            { term: 'Bicis normales', val: location.bikes },
+            { term: 'Bicis eléctricas', val: location.ebikes },
+        ]
+        const popupContent = `<strong>${location.name}</strong><br />` + modalList.map(el => `${el.term}: ${el.val}`).join('<br />');
 
         return L.marker([location.lat, location.lng])
             .addTo(map)
@@ -197,32 +120,18 @@ function updateMap(locations) {
     // Set view to show all markers
     const bounds = L.latLngBounds(locations.map(loc => [loc.lat, loc.lng]));
     map.fitBounds(bounds);
+    map.setMaxBounds(bounds);
 }
 
-
-updateMap(locations);
-
-
-
-// https://enbici.aviles.es/Prodws/global/mapa
-
-// fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://enbici.aviles.es/Prodws/global/mapa')}`)
-//     .then(response => {
-//         if (response.ok) return response.json()
-//         throw new Error('Network response was not ok.')
-//     })
-//     .then(data => console.log(data.contents));
-
 async function getRealTimeData() {
+   
     try {
 
         // const response = await fetch('https://enbici.aviles.es/Prodws/global/mapa');
         // const text = await response.text();
-        
         const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://enbici.aviles.es/Prodws/global/mapa')}`);
         const text = await response.text();
 
-        const http_code = JSON.parse(text).status.http_code; // 200
         const contents = JSON.parse(text).contents;
 
         const parser = new DOMParser();
@@ -235,7 +144,6 @@ async function getRealTimeData() {
             const locks = parseInt(marker.querySelector('div:nth-child(2)').textContent.trim(), 10);
             const bikes = parseInt(marker.querySelector('div:nth-child(3)').textContent.trim(), 10);
             const ebikes = parseInt(marker.querySelector('div:nth-child(4)').textContent.trim(), 10);
-
             return { id, name, locks, bikes, ebikes };
         });
 
@@ -259,11 +167,9 @@ async function getRealTimeData() {
                 }
             });
 
-        // console.log( 'elems: ', elements )
-        // console.log( 'coords: ', coordinates )
-
         if (elements.length !== coordinates.length) {
-            console.error('Elems and coords unmatch...');
+            console.error('Elements and coords unmatch...');
+            showStatus(true, `<p style="color:#c00">Error Cargando Datos<br>Recarga la página.</p>`);
             return;
         }
     
@@ -273,18 +179,33 @@ async function getRealTimeData() {
             lng: coordinates[index].lng,
         }));
 
-
-        // console.log('Realtime data:', locations);
         return locations;
 
     } catch (error) {
         console.error('Error getting real time data:', error);
+        showStatus(true, `<p style="color:#c00">Error Cargando Datos<br>Recarga la página.</p>`);
         return [];
     }
 }
 
+const showStatus = function(show, msg) {
+    if (show) {
+        document.querySelector('#message').innerHTML = msg;
+        document.querySelector('#status').style.display = 'grid';
+    } else {
+        document.querySelector('#status').style.display = 'none';
+        document.querySelector('#message').innerHTML = '';
+    }
+}
 
-getRealTimeData().then(locations => {
-    console.log('Locations Updated:', locations);
-    updateMap(locations);
-});    
+const getLocations = function() {
+    console.log('Getting data...');
+    showStatus(true, `<p>Cargando Datos...</p>`);
+    getRealTimeData().then(locations => {
+        console.log('Locations Updated:', locations);
+        updateMap(locations);
+        showStatus(false);
+    });        
+}
+
+getLocations();
