@@ -1,8 +1,10 @@
 {
+  "name": "aviles.enbici",
+  "version": "0.1.0",
   "scripts": {
     "start": "parcel src/index.html",
-    "clean": "rimraf dist",
-    "build": "npm run clean && parcel build --no-source-maps src/index.html"
+    "clean": "rimraf docs",
+    "build": "npm run clean && parcel build --dist-dir docs --no-source-maps src/index.html"
   },
   "devDependencies": {
     "parcel": "^2.13.3",
