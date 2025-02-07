@@ -1,94 +1,7 @@
-// Default Locations
-const locations = [
-    {
-        id: 0, name: "01 - CDA  Quirinal",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.5558, lng: -5.93422
-    },
-    {
-        id: 1, name: "02 - Las Meanas",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.55666, lng: -5.9256
-    },
-    {
-        id: 2, name: "03 - Los Canapés",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.54636, lng: -5.9157
-    },
-    {
-        id: 3, name: "04 - La Toba",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.54566, lng: -5.89987
-    },
-    {
-        id: 4, name: "05 - Villalegre",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.53772, lng: -5.90362
-    },
-    {
-        id: 5, name: "06 - Oficina de Turismo",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.556089, lng: -5.920556
-    },
-    {
-        id: 6, name: "07 - EOI IES nº5",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.560407, lng: -5.933887
-    },
-    {
-        id: 7, name: "08 - Parking Avda. Gijón",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.551769, lng: -5.914237
-    },
-    {
-        id: 8, name: "09 - PEPA",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.559548, lng: -5.909888
-    },
-    {
-        id: 9, name: "10 - LA LUZ",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.538959, lng: -5.90838
-    },
-    {
-        id: 10, name: "11 - Estación Central",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.561217, lng: -5.923021
-    },
-    {
-        id: 11, name: "12 - La Carriona",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.541638, lng: -5.938934
-    },
-    {
-        id: 12, name: "13 - La Magdalena",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.551086, lng: -5.929057
-    },
-    {
-        id: 13, name: "14 - Llaranes - FEVE",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.553833, lng: -5.897278
-    },
-    {
-        id: 14, name: "15 - HUSA",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.552111, lng: -5.936722
-    },
-    {
-        id: 15, name: "16 - La Rocica - RENFE",
-        locks: 0, bikes: 0, ebikes: 0,
-        lat: 43.547028, lng: -5.905556
-    }
-];
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 // Init mapa
 const map = L.map('map', {
     minZoom: 12,
-    maxZoom: 18
+    maxZoom: 18,
 }).setView([43.556089, -5.920556], 14);
 
 // Base Layer OpenStreetMap
@@ -118,8 +31,10 @@ function updateMap(locations) {
 
     // Set view to show all markers
     const bounds = L.latLngBounds(locations.map(loc => [loc.lat, loc.lng]));
-    map.fitBounds(bounds);
-    map.setMaxBounds(bounds);
+    const boundsPad = bounds.pad(0.25);
+
+    map.fitBounds(boundsPad);
+    map.setMaxBounds(boundsPad);
 }
 
 async function getRealTimeData() {
